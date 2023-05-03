@@ -1,0 +1,27 @@
+@mixin base-shadow { 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+@mixin zoom {
+    transform: scale(1.02);
+}
+
+@mixin landscape {
+    @media (min-width: 768px) { @content; }
+  }
+  @mixin desktop {
+    @media (min-width: 1200px) { @content; }
+  }
+
+  @mixin points {
+    @media (min-width: 385px) { @content; }
+  }
+
+  @mixin short-points {
+    @media (min-width: 367px) { @content; }
+  }
+
+  @mixin tall-points {
+    @media (min-width: 414px) { @content; }
+  }
+  

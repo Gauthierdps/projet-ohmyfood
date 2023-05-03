@@ -1,0 +1,58 @@
+footer {
+    background-color: #353535;
+    color: white;
+    overflow: hidden;
+    margin-bottom: -8px;
+    position: relative;
+    padding-top: 66px;
+    
+
+& p {
+    padding-left: 25px;
+
+}  
+
+& i {
+    padding-right: 10px;
+}
+
+& a {
+    text-decoration: none;
+    color: white;
+}
+
+& img {
+    font-size: 0.5rem;
+    width: 152px;
+    position: absolute;
+    top: 34px;
+    left: 26px;
+    filter: invert(1);
+    @include desktop {
+        position: relative;
+        margin-right: -828px;
+        margin-top: -13px;
+        width: 111px;
+        height: 27px;
+    }
+}
+
+@include desktop {
+display: flex;
+flex-direction: row;
+justify-content: end;
+padding-right: 205px;
+padding-bottom: 35px ;
+padding-top: 27px;
+font-size: 1.3rem;
+position: relative;
+}
+
+}
+
+.footer_changing {
+    & i {
+        padding-right: 5px;
+    }
+}
+

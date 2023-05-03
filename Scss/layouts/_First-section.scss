@@ -1,0 +1,19 @@
+.first-section {
+    margin-top: -1.3rem;
+    background-color: #EAEAEA;
+
+    & h1 {
+        text-align: center;
+        padding-top: 25px;
+        align-items: center;
+        font-size: 1.5rem;
+        
+    }
+
+    & p {
+        text-align: center;
+        font-weight: 300;
+        font-size: 1.3rem;
+    }
+
+}

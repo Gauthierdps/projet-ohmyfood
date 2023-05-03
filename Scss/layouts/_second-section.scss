@@ -1,0 +1,62 @@
+.second-section {
+    counter-reset: numbers;
+    padding-bottom: 30px;
+
+    & h1 { padding-left: 15px;
+        @include desktop {
+            padding-left: 14%;
+        }
+}
+
+    & ol {
+        display: flex;
+        flex-direction: column;
+       gap: 1.5rem;
+
+       @include desktop {
+        flex-direction: row;
+        justify-content: center;
+       }
+
+
+    }
+
+    & li {
+        position: relative;
+        
+    &::before {
+        counter-increment: numbers;
+        content: counter(numbers);
+        color: white;
+        background-color: #9356DC;
+        border-radius: 50%;
+        width: 2rem;
+        height: 2rem;
+       display: grid;
+       place-items: center;
+       position: absolute;
+        left: -0.9rem;
+        top: 1rem;
+    }
+      
+        list-style-type: none;
+        background-color: #f7f7f7;
+        border-radius: 25px;
+        padding: 1.5rem;
+        margin-right: 30px;
+        font-weight: 600;
+        @include base-shadow;
+        
+    &:hover {
+        background-color: rgba(142, 103, 170, 0.2);
+        @include zoom;
+        & i { color: #9356DC;
+        }
+    } 
+    
+    }
+    & i {
+        color: #7E7E7E;
+        margin: 0px 20px 0px 20px;
+    }
+}

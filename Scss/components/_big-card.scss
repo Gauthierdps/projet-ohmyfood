@@ -1,0 +1,19 @@
+.big-card {
+   
+    background-color:  #EAEAEA;
+    border-radius: 40px 40px 0px 0px;
+    max-width: 100%;
+    margin-top: -10%;
+    position: relative;
+
+    @include desktop {
+  margin: -10% 120px;
+  margin-bottom: auto;
+    }
+
+    & h2 {
+        padding-left: 20px;
+        
+    }
+}
+

@@ -1,0 +1,218 @@
+.menu-card {
+    background-color: white;
+    border-radius: 15.0431px;
+    margin: 0px 15px 10px 15px;
+    position: relative;
+    overflow: hidden;
+    animation: appear 1s;
+    animation-fill-mode: both;
+    transform-origin: left;
+    
+
+    & h3 {
+        padding: 20px 0px 0px 15px;
+    }
+    &:hover .menu-card__check {
+margin-right: 0rem;
+    }
+    &:hover .slide-right {
+        padding-right: 60px;
+    }
+
+    &:hover .points {
+        right: 93px;
+        transition: all 0.3s;
+    }  
+
+    &:hover .short-points {
+        right: 93px;
+            transition: all 0.3s;
+    }
+
+    &:hover .tall-points {
+        right: 93px;
+            transition: all 0.3s;
+    }
+
+    &:hover .title-points {
+        right: 43%;
+        bottom: 29px;
+            transition: all 0.3s;
+    }
+
+    &:hover .title-points-2 {
+        right: 50%;
+        bottom: 29px;
+            transition: all 0.3s;
+    }
+
+    &:hover .title-points-3 {
+        right: 31%;
+        bottom: 29px;
+            transition: all 0.3s;
+    }
+
+    &:hover .hide-title {
+        visibility: hidden;
+        @include points {
+            visibility: visible;
+        }
+    }
+}
+
+.menu-card-by {
+    background-color: white;
+    border-radius: 15.0431px;
+    margin: 0px 15px 30px 15px;
+    position: relative;
+    overflow: hidden;
+    animation: appear 1s;
+    animation-fill-mode: both;
+    
+    
+
+
+    & h3 {
+        padding: 20px 0px 0px 15px;
+    }
+    &:hover .slide-right {
+        padding-right: 60px;
+    }
+
+    &:hover .menu-card__check {
+        margin-right: 0rem;
+  
+    &:hover .points {
+            right: 91px;
+            transition: all 0.3s;
+        }     
+    }
+}
+
+.menu-card__check {
+    display: grid;
+    place-items: center;
+    position: absolute;
+    background-color: #99e2d0;
+    height: 100%;
+    width: 62px;
+    right: 0px;
+    bottom: 0px;
+    margin-right: -62px;
+    transition: all 0.5s;
+    
+    & i {
+        display: grid;
+        place-items: center;
+        background: white;
+        width: 2rem;
+        border-radius: 50%;
+        aspect-ratio: 1 / 1;
+        color: #99e2d0;
+        }
+}
+
+
+.slide-right {
+   margin-right: 10px;
+    transition: all 0.5s;
+}
+
+.points {
+  
+    position: absolute;
+    right: -10px;
+
+    @include points {
+        display: none;
+    }
+    
+}
+
+.short-points {
+  
+    position: absolute;
+    right: -10px;
+
+    @include short-points {
+        display: none;
+    }
+    
+}
+
+.tall-points {
+  
+    position: absolute;
+    right: -10px;
+
+    @include tall-points {
+        display: none;
+    }
+    
+}
+
+.points2 {
+    position: absolute;
+    right: 92px;
+
+    @include points {
+        display: none;
+    }
+    
+}
+
+
+.title-points {
+    position: absolute;
+    right: -10px;
+    bottom: 29px;
+    @include points {
+        display: none;
+    }
+
+}
+
+.title-points-2 {
+    position: absolute;
+    right: -10px;
+    bottom: 29px;
+    @include points {
+        display: none;
+    }
+
+}
+
+.title-points-3 {
+    position: absolute;
+    right: -10px;
+    bottom: 29px;
+    @include points {
+        display: none;
+    }
+
+}
+
+@keyframes appear {
+0% {
+    transform: scale(0);
+}
+100% {
+    transform: scale(1);
+}
+
+}
+
+.delay-2 {
+    animation-delay: 300ms;
+    transform-origin: right;
+}
+
+.delay-3 {
+    animation-delay: 600ms;
+    transform-origin: left;
+}
+
+.delay-4 {
+    animation-delay: 1.1s;
+    transform-origin: right;
+}
